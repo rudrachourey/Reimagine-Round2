@@ -107,7 +107,7 @@ body {
   transition: 0.2s;
 }
 
-.que-btn:nth-child(2):before {
+.que-btn :nth-child(2):before {
   content: "No";
 }
 
@@ -2277,7 +2277,7 @@ footer {
 }
  
 #footer-bottom .btn::before {
-  content: "contact us";
+  content: "Online Shopping";
   text-transform: capitalize;
   display: flex;
   align-items: center;
@@ -2290,6 +2290,11 @@ footer {
   height: 100%;
   background: #ffe9cb;
   transition: 0.2s;
+}
+
+
+#footer-bottom :nth-child(2)::before {
+  content: "contact us";
 }
 #footer-bottom .btn:hover::before {
   top: 0%;
