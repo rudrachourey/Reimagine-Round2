@@ -13,6 +13,15 @@ body {
   transition: background-color 1.5s ease; 
 }
 
+
+
+
+@media screen and (max-width:500px){
+  body{
+    cursor: initial;
+  }
+}
+
 @font-face {
   font-family: piano;
   src: url(./fonts/palatino.ttf);
@@ -50,7 +59,7 @@ body {
   height: 100%;
   padding-top: 15%;
   overflow: hidden !important;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   background-color: #FFE9CB;
 }
@@ -220,6 +229,10 @@ body {
     height: 370px;
   }
 
+ body .circale{
+  display: none;
+
+ }
 
   .question-div .one{
     bottom: -23%;
@@ -243,13 +256,14 @@ body {
   
 }
 
-.content h2 {
+.contents h2 {
   font-size: 23vw;
 }
 
 .question-div p {
   font-size: 15px;
   width: 50%;
+  text-align: center;
 }
 
 .que-btn .btn-que{
@@ -782,12 +796,14 @@ nav img {
     letter-spacing: 0;
   }
   .right-content {
-    padding: 0;
-    gap: 10px;
+    padding-left: 20px;
+    gap: 40px;
   }
   .left-content {
     padding: 0;
-    gap: 10px;
+    gap: 40px;
+    margin-left: -30px;
+    /* background-color: red; */
   }
   .right-content h1 {
     font-size: 12px;
@@ -796,13 +812,16 @@ nav img {
   nav img {
     position: absolute;
     bottom: 10px;
+    left: 40%;
     width: 80px;
   }
 
   nav {
     padding-top: 30px;
     justify-content: center;
-    gap: 50px;
+    /* background-color: red; */
+    padding-right: 80px;
+    gap: 70px;
   }
 
   .icon{
@@ -1469,6 +1488,7 @@ model-viewer {
 
 
 
+
 #six-section h1 {
   font-weight: 100;
   color: #ffe9cb;
@@ -1481,10 +1501,22 @@ model-viewer {
     /* background-color: yellowgreen; */
   }
 
-  model-viewer {
+
+  model-viewer{
     width: 10vw;
   }
   
+  #six-section .d3-div{
+    width: 70%;
+    height: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999;
+    /* background-color: yellowgreen; */
+  }
+  
+
   
 #six-section .dwrapper{
   align-items: center;
@@ -2274,6 +2306,7 @@ footer {
   transition: 0.5s;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
  
 #footer-bottom .btn::before {
@@ -2288,6 +2321,7 @@ footer {
   top: 100%;
   width: 100%;
   height: 100%;
+  white-space: nowrap;
   background: #ffe9cb;
   transition: 0.2s;
 }
